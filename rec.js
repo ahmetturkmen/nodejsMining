@@ -10,7 +10,7 @@ let users ={
       };
 
 
-  
+//Manhattan method 
 function manhattan(user1, user2){
         let distance =0;
         for (let key in user1) {
@@ -23,6 +23,7 @@ function manhattan(user1, user2){
 
 console.log(manhattan(users['Hailey'],users['Veronica']));
 
+//Euclidean method
 function euclidean(rating1,rating2){
     let distance=0;
     for(var key in rating1){
