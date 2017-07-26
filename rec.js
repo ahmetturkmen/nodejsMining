@@ -27,6 +27,7 @@ function manhattan(user1, user2){
 
 console.log(manhattan(users['Hailey'],users['Veronica']));
 
+// Euclidean added
 function euclidean(rating1,rating2){
     let distance=0;
     for(var key in rating1){
