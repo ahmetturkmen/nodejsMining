@@ -14,7 +14,7 @@ let users ={
       };
 
 
-  
+//Manhattan method 
 function manhattan(user1, user2){
         let distance =0;
         for (let key in user1) {
@@ -25,7 +25,6 @@ function manhattan(user1, user2){
    return 'The manhattan distance between them : '+distance;
 }
 
-
 console.log(manhattan(users['Hailey'],users['Veronica']));
 
 // Euclidean added
@@ -33,8 +32,7 @@ function euclidean(rating1,rating2){
     let distance=0;
     for(var key in rating1){
         if(key in rating2)
-            distance += ((Math.pow((rating1[key]-rating2[key]),2)));
-           
+            distance += ((Math.pow((rating1[key]-rating2[key]),2)));           
     }
     return Math.sqrt(distance)
 }
